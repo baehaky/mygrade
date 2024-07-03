@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>My Outstanding</title>
+    <style>
+      .main-section {
+        background-color: rgba(0, 0, 0, 0.4);
+        width: 700px;
+        flex-direction: column;
+        margin: 0 auto;
+      }
+      .main-section .title > h1 {
+        text-align: center;
+        font-family: Arial, Helvetica, sans-serif;
+      }
+      .main-section > .title {
+        padding: 5px 10px;
+      }
+      .table-wrapper {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        row-gap: 5px;
+        padding: 10px;
+      }
+
+      table {
+        border-collapse: collapse; /* Optional: Add table styling as needed */
+      }
+
+      th,
+      td {
+        border: 1px solid black; /* Optional: Add table styling as needed */
+        padding: 10px; /* Optional: Add table styling as needed */
+      }
+    </style>
+  </head>
+  <body>
+    <main class="main-section">
+      <div class="title">
+        <h1>Daftar Matakuliah</h1>
+        <div>
+          <h2>Nama: <span id="nama"></span></h2>
+          <h2>NIM: <span id="nim"></span></h2>
+        </div>
+        <button onclick="insertData()">Tambah data </button>
+      </div>
+      <div class="table-wrapper">
+        <table>
+          <thead>
+            <tr>
+              <th>No.</th>
+              <th>Nama Matakuliah</th>
+              <th>Nilai Akhir</th>
+              <th>Grade</th>
+            </tr>
+          </thead>
+          <tbody id="tableBody"></tbody>
+        </table>
+      </div>
+    </main>
+    <!-- <script src="./challange_2.js"></script> -->
+  </body>
+</html>
